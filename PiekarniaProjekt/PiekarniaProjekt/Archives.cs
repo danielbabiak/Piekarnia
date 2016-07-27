@@ -10,21 +10,17 @@ using System.Windows.Forms;
 
 namespace PiekarniaProjekt
 {
-    public partial class Kontrahent : Form
+    public partial class Archives : Form
     {
-        public Kontrahent()
+        public Archives()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void previous_button_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            Program.start.Show();
+            this.Close();
         }
     }
 }

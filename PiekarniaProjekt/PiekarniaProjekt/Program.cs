@@ -8,6 +8,8 @@ namespace PiekarniaProjekt
 {
     static class Program
     {
+        public static Start start;
+        public static Database database;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,9 @@ namespace PiekarniaProjekt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Start());
+            start = new Start();
+            database = new Database();
+            Application.Run(start);
         }
     }
 }
